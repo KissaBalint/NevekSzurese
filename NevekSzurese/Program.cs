@@ -106,7 +106,34 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "6")
                 {
-                    //6
+                    //csak betűk
+                    foreach (string nev in nevek)
+                    {
+
+                        bool jo = true;
+
+                        foreach (char betu in nev)
+                        {
+                            if (!char.IsLetter(betu) && betu != ' ')
+                                jo = false;
+                        }
+                        
+
+                        //nagybtű vizsgálat
+                        
+                        string[] darabok = nev.TrimStart().Split(' ');
+                            
+                        foreach (string nevdarab in darabok)
+                        {
+                            
+                            if (!char.IsUpper(nevdarab.TrimStart()[0]))
+                                jo = false;
+
+                        }
+                        if (jo)
+                            Console.WriteLine(nev.TrimStart());
+                        
+                    }
                 }
                 else
                 {
