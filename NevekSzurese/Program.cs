@@ -41,7 +41,7 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "2")
                 {
-                    foreach(string nev in nevek)
+                    foreach (string nev in nevek)
                     {
                         string[] darabok = nev.TrimStart().Split(' ');
                         bool jo = true;
@@ -50,7 +50,7 @@ namespace NevekSzurese
                             //elemer
                             if (!char.IsUpper(nevdarab.TrimStart()[0]))
                                 jo = false;
-                            
+
                         }
                         if (jo)
                             Console.WriteLine(nev.TrimStart());
@@ -59,17 +59,17 @@ namespace NevekSzurese
                 else if (valaszt == "3")
                 {
 
-                    
+
 
                     foreach (var nev in nevek)
                     {
                         bool jo = true;
                         foreach (char betu in nev)
                         {
-                           
+
                             if (char.IsNumber(betu))
                                 jo = false;
-                                
+
                         }
                         if (jo)
                             Console.WriteLine(nev.TrimStart());
@@ -85,8 +85,8 @@ namespace NevekSzurese
 
                         foreach (char betu in nev)
                         {
-                            if (!(char.IsLetterOrDigit(betu) || betu == ' ')) 
-                                jo = false; 
+                            if (!(char.IsLetterOrDigit(betu) || betu == ' '))
+                                jo = false;
                         }
                         if (jo)
                         {
@@ -96,7 +96,13 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "5")
                 {
-                    //5
+                   foreach(string nev in nevek)
+                    {
+                        if(nev.Contains(' '))
+                        {
+                            Console.WriteLine(nev.TrimStart());
+                        }
+                    }
                 }
                 else if (valaszt == "6")
                 {
