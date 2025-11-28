@@ -10,6 +10,13 @@ namespace NevekSzurese
     {
         static void Main(string[] args)
         {
+
+            List<string> nevek = new List<string>();
+            nevek.Add("Kiss István");
+            nevek.Add("Nagy elemér");
+            nevek.Add("kissándorjózsef23");
+            nevek.Add(" Tóth# Ilona");
+            nevek.Add("Kiss Bálint");
             while (true)
             {
                 Console.Clear();
