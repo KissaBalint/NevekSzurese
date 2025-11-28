@@ -78,7 +78,21 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "4")
                 {
-                    //4
+                    foreach (string nev in nevek)
+                    {
+
+                        bool jo = true;
+
+                        foreach (char betu in nev)
+                        {
+                            if (!(char.IsLetterOrDigit(betu) || betu == ' ')) 
+                                jo = false; 
+                        }
+                        if (jo)
+                        {
+                            Console.WriteLine(nev.TrimStart());
+                        }
+                    }
                 }
                 else if (valaszt == "5")
                 {
