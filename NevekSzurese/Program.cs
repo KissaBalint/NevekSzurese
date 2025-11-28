@@ -34,6 +34,7 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "1")
                 {
+                    Console.Clear();
                     foreach (string nev in nevek)
                     {
                         Console.WriteLine(nev.TrimStart());
@@ -41,6 +42,7 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "2")
                 {
+                    Console.Clear();
                     foreach (string nev in nevek)
                     {
                         string[] darabok = nev.TrimStart().Split(' ');
@@ -58,7 +60,7 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "3")
                 {
-
+                    Console.Clear();
 
 
                     foreach (var nev in nevek)
@@ -78,6 +80,7 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "4")
                 {
+                    Console.Clear();
                     foreach (string nev in nevek)
                     {
 
@@ -96,7 +99,8 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "5")
                 {
-                   foreach(string nev in nevek)
+                    Console.Clear();
+                    foreach (string nev in nevek)
                     {
                         if(nev.Contains(' '))
                         {
@@ -106,6 +110,7 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "6")
                 {
+                    Console.Clear();
                     //csak betűk
                     foreach (string nev in nevek)
                     {
