@@ -41,7 +41,20 @@ namespace NevekSzurese
                 }
                 else if (valaszt == "2")
                 {
-                    //2
+                    foreach(string nev in nevek)
+                    {
+                        string[] darabok = nev.TrimStart().Split(' ');
+                        bool jo = true;
+                        foreach (string nevdarab in darabok)
+                        {
+                            //elemer
+                            if (!char.IsUpper(nevdarab.TrimStart()[0]))
+                                jo = false;
+                            
+                        }
+                        if (jo)
+                            Console.WriteLine(nev.TrimStart());
+                    }
                 }
                 else if (valaszt == "3")
                 {
